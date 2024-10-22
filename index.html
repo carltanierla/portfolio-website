@@ -33,17 +33,136 @@
                     <p class="about__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur tempora sapiente minus velit, quo delectus incidunt exercitationem qui possimus, quia pariatur. Corrupti quisquam perspiciatis ad quos necessitatibus pariatur exercitationem amet.</p>
 
                     <div class="tabs__btns">
-                        <span class="tabs__btn tab__action">My Skills</span>
-                        <span class="tabs__btn">Experience</span> 
-                        <span class="tabs__btn">Education</span> 
+                        <span class="tabs__btn tab__active" data-target="skills">My Skills</span>
+                        <span class="tabs__btn" data-target="experience">Experience & Education</span> 
+                        <span class="tabs__btn" data-target="certificates">My Cetificates</span> 
                     </div>
 
                     <div class="tabs__content">
-                        <div class="tabs__item">
+                        <div class="tabs__item tab__active" data-content id="skills">
+                            <div class="tabs__data grid d-flex">
+                                <div class="tabs__data-container">
+                                    <div class="tabs_Title">Frontend</div>
+                                    <div class="logo__container">
+                                        <span class="tabs__logo">
+                                            <img alt="html logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/html.svg">
+                                        </span>
+                                        <span class="tabs__logo">
+                                            <img alt="css logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/css.svg">
+                                        </span>
+                                        <span class="tabs__logo">
+                                            <img alt="JavaScript logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/javascript.svg">
+                                        </span>
+                                        <span class="tabs__logo">
+                                            <img alt="jquery logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/jquery.svg">
+                                        </span>
+                                        <span class="tabs__logo">
+                                            <img alt="bootstrap logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/bootstrap.svg">
+                                        </span>
+                                        <span class="tabs__logo">
+                                            <img alt="vue logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/vue.svg">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__data grid d-flex">
+                                <span class="tabs_Title">Backend</span>
+                                <span class="tabs__logo">
+                                    <img alt="php logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/php.svg">
+                                </span>
+                                <span class="tabs__logo">
+                                    <img alt="laravel logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/laravel.svg">
+                                </span>
+                            </div>
+
+                            <div class="tabs__data grid d-flex">
+                                <span class="tabs_Title">Database</span>
+                                <span class="tabs__logo">
+                                    <img alt="mysql logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/mysql.svg">
+                                </span>
+                            </div>
+                    
+                            <div class="tabs__data grid d-flex">
+                                <span class="tabs_Title">Tools</span>
+                                <span class="tabs__logo">
+                                    <img alt="git logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/git.svg">
+                                </span>
+                                <span class="tabs__logo">
+                                    <img alt="php logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/docker.svg">
+                                </span>
+                                <span class="tabs__logo">
+                                    <img alt="php logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/jira.svg">
+                                </span>
+                                <span class="tabs__logo">
+                                    <img alt="php logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/confluence.svg">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tabs__item" data-content id="experience">
                             <div class="tabs__data grid">
                                 <p class="tabs__description">
-                                    <span></span>
+                                    <span>Junior Web Developer </span> - Cafe24 Philippines
+                                    <span>August 2019 – June 2023</span> 
                                 </p>
+                                <p class="tabs__description">
+                                    <span>Web Developer Intern  </span> - Pierre and Paul Solutions 
+                                    <span>Jan 2019 – May 2019 </span> 
+                                </p>
+
+                                <p class="tabs__description">
+                                    <span>Bachelor of Science in Computer Scienec</span> - Pamantasan ng Lungsod ng Pasig
+                                    <span>2015 – 2019 </span> 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tabs__item" data-content id="certificates">
+                            <div class="tabs__data grid">
+                                <div class="tabs__description">
+                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <div class="certificate">
+                                        <span>Consuming RESTful APIs in PHP with Guzzle
+                                        </span>
+                                        <span>September 2023</span>
+                                    </div> 
+                                </div>
+                                <div class="tabs__description">
+                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <div class="certificate">
+                                        <span>JavaScript Essential Training</span>
+                                        <span>September 2023</span> 
+                                    </div>
+                                </div>
+                                <div class="tabs__description">
+                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <div class="certificate">
+                                        <span>MySQL Advanced Topics (2019)</span>
+                                        <span>September 2023</span> 
+                                    </div>
+                                </div>
+                                <div class="tabs__description">
+                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <div class="certificate">
+                                        <span>PHP with MySQL Essential Training: 1 The Basics</span>
+                                        <span>August 2023</span> 
+                                    </div>
+                                </div>
+                                <div class="tabs__description">
+                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <div class="certificate">
+                                        <span>PHP: Object-Oriented Programming </span>
+                                        <span>August 2023</span>
+                                    </div>
+                                </div>
+                                <div class="tabs__description">
+                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <div class="certificate">
+                                        <span>PHP Essential Training </span>
+                                        <span>September 2023</span> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -51,5 +170,8 @@
             </div>
         </section>
     </main>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/tabs.js"></script>
 </body>
 </html>
