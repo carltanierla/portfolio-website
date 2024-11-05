@@ -6,10 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Portfolio Website</title>
 </head>
 <body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Carl</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav__close">
+                    <i class="ul uil-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__socials">
+                <a href="www.facebook.com" target="_blank" class="nav__social-link">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+                <a href="www.twitter.com" target="_blank" class="nav__social-link">
+                    <i class="uil uil-twitter"></i>
+                </a>
+
+                <a href="www.linkedin.com" target="_blank" class="nav__social-link">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+
+                <a href="www.instagram.com" target="_blank" class="nav__social-link">
+                    <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+
+            <div class="nav__btns">
+                <a href="#contact" class="nav__link-btn btn">Contact Me</a>
+
+                <div class="nav__toggle" id="nav__toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main class="main">
         <section class="home" id="home">
             <div class="home__container container grid">
@@ -22,7 +67,6 @@
                 <img src="assets/img/pic1.JPG" alt="Profile" class="home__img">
             </div>
         </section>
-
 
         <section class="about section" id="about">
             <div class="about__container container grid">
@@ -39,64 +83,129 @@
                     </div>
 
                     <div class="tabs__content">
-                        <div class="tabs__item tab__active" data-content id="skills">
-                            <div class="tabs__data grid d-flex">
+                        <div class="tabs__item tab__active d-flex" data-content id="skills">
+                            <div class="tabs__data d-flex">
                                 <div class="tabs__data-container">
-                                    <div class="tabs_Title">Frontend</div>
+                                    <div class="tabs__title">Frontend</div>
                                     <div class="logo__container">
-                                        <span class="tabs__logo">
-                                            <img alt="html logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/html.svg">
-                                        </span>
-                                        <span class="tabs__logo">
-                                            <img alt="css logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/css.svg">
-                                        </span>
-                                        <span class="tabs__logo">
-                                            <img alt="JavaScript logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/javascript.svg">
-                                        </span>
-                                        <span class="tabs__logo">
-                                            <img alt="jquery logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/jquery.svg">
-                                        </span>
-                                        <span class="tabs__logo">
-                                            <img alt="bootstrap logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/bootstrap.svg">
-                                        </span>
-                                        <span class="tabs__logo">
-                                            <img alt="vue logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/vue.svg">
-                                        </span>
+                                        <div class="tabs__logo card">
+                                            <img alt="html logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/html.svg">
+                                            <div class="skill-logo-container">
+                                                <p><b>Html</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <img alt="css logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/css.svg">
+                                            <div class="skill-logo-container">
+                                                <p><b>Css</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <img alt="JavaScript logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/javascript.svg">
+                                            <div class="skill-logo-container">
+                                                <p><b>Javascript</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <img alt="jquery logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/jquery.svg">
+                                            <div class="skill-logo-container">
+                                                <p><b>Jquery</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <img alt="bootstrap logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/bootstrap.svg">
+                                            <div class="skill-logo-container">
+                                                <p><b>Bootstrap</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <img alt="vue logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/vue.svg">
+                                            <div class="skill-logo-container">
+                                                <p><b>Vue</b></h4>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="tabs__data grid d-flex">
-                                <span class="tabs_Title">Backend</span>
-                                <span class="tabs__logo">
-                                    <img alt="php logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/php.svg">
-                                </span>
-                                <span class="tabs__logo">
-                                    <img alt="laravel logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/laravel.svg">
-                                </span>
+                            <div class="tabs__data d-flex">
+                                <div class="tabs__data-container">
+                                    <span class="tabs__title">Backend</span>
+                                    <div class="logo__container">
+                                        <div class="tabs__logo card">
+                                            <span class="tabs__logo">
+                                                <img alt="php logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/php.svg">
+                                            </span>
+                                            <div class="skill-logo-container">
+                                                <p><b>Php</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <span class="tabs__logo">
+                                                <img alt="laravel logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/laravel.svg">
+                                            </span>
+                                            <div class="skill-logo-container">
+                                                <p><b>Laravel</b></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="tabs__data grid d-flex">
-                                <span class="tabs_Title">Database</span>
-                                <span class="tabs__logo">
-                                    <img alt="mysql logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/mysql.svg">
-                                </span>
+                            <div class="tabs__data d-flex">
+                                <div class="tabs__data-container">
+                                    <span class="tabs__title">Database</span>
+                                    <div class="logo__container">
+                                        <div class="tabs__logo card">
+                                            <span class="tabs__logo">
+                                                <img alt="mysql logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/mysql.svg">
+                                            </span>
+                                            <div class="skill-logo-container">
+                                                <p><b>Mysql</b></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                     
-                            <div class="tabs__data grid d-flex">
-                                <span class="tabs_Title">Tools</span>
-                                <span class="tabs__logo">
-                                    <img alt="git logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/git.svg">
-                                </span>
-                                <span class="tabs__logo">
-                                    <img alt="php logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/docker.svg">
-                                </span>
-                                <span class="tabs__logo">
-                                    <img alt="php logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/jira.svg">
-                                </span>
-                                <span class="tabs__logo">
-                                    <img alt="php logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/confluence.svg">
-                                </span>
+                            <div class="tabs__data d-flex">
+                                <div class="tabs__data-container">
+                                    <span class="tabs__title">Tools</span>
+                                    <div class="logo__container">
+                                        <div class="tabs__logo card">
+                                            <span class="tabs__logo">
+                                                <img alt="git logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/git.svg">
+                                            </span>
+                                            <div class="skill-logo-container">
+                                                <p><b>Git</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <span class="tabs__logo">
+                                                <img alt="php logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/docker.svg">
+                                            </span>
+                                            <div class="skill-logo-container">
+                                                <p><b>Docker</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <span class="tabs__logo">
+                                                <img alt="php logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/jira.svg">
+                                            </span>
+                                            <div class="skill-logo-container">
+                                                <p><b>Jira</b></h4>
+                                            </div>
+                                        </div>
+                                        <div class="tabs__logo card">
+                                            <span class="tabs__logo">
+                                                <img alt="php logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/confluence.svg">
+                                            </span>
+                                            <div class="skill-logo-container">
+                                                <p><b>Confluence</b></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -121,7 +230,7 @@
                         <div class="tabs__item" data-content id="certificates">
                             <div class="tabs__data grid">
                                 <div class="tabs__description">
-                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <img alt="linkedin logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/linkedin.svg">
                                     <div class="certificate">
                                         <span>Consuming RESTful APIs in PHP with Guzzle
                                         </span>
@@ -129,35 +238,35 @@
                                     </div> 
                                 </div>
                                 <div class="tabs__description">
-                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <img alt="linkedin logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/linkedin.svg">
                                     <div class="certificate">
                                         <span>JavaScript Essential Training</span>
                                         <span>September 2023</span> 
                                     </div>
                                 </div>
                                 <div class="tabs__description">
-                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <img alt="linkedin logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/linkedin.svg">
                                     <div class="certificate">
                                         <span>MySQL Advanced Topics (2019)</span>
                                         <span>September 2023</span> 
                                     </div>
                                 </div>
                                 <div class="tabs__description">
-                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <img alt="linkedin logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/linkedin.svg">
                                     <div class="certificate">
                                         <span>PHP with MySQL Essential Training: 1 The Basics</span>
                                         <span>August 2023</span> 
                                     </div>
                                 </div>
                                 <div class="tabs__description">
-                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <img alt="linkedin logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/linkedin.svg">
                                     <div class="certificate">
                                         <span>PHP: Object-Oriented Programming </span>
                                         <span>August 2023</span>
                                     </div>
                                 </div>
                                 <div class="tabs__description">
-                                    <img alt="linkedin logo." loading="lazy" width="48" height="48" decoding="async" data-nimg="1" style="color:transparent" src="/assets/img/Icons/linkedin.svg">
+                                    <img alt="linkedin logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/linkedin.svg">
                                     <div class="certificate">
                                         <span>PHP Essential Training </span>
                                         <span>September 2023</span> 
@@ -169,9 +278,134 @@
                 </div>
             </div>
         </section>
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">My Projects</h2>
+            <p class="section__description"></p>
+
+            <div class="portfolio__container container grid">
+                <div class="portfolio__item">
+                    <img src="assets/img/pic1.JPG" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Development</p>
+                        <h3 class="portfolio__title">Web Design</h3>
+                        <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="assets/img/pic1.JPG" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Application</p>
+                        <h3 class="portfolio__title">Photoshop Design</h3>
+                        <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="assets/img/pic1.JPG" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <p class="portfolio__subtitle">Development</p>
+                        <h3 class="portfolio__title">Web Design</h3>
+                        <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h2 class="section__title">Contact Me</h2>
+                    <p class="contact__description">
+                        You can connect with me via phone number: <a href="tel:+639765603890">+639765603890</a> or via email: <a href="mailto:carltanierla12@gmail.com">carltanierla12@gmail.com</a>
+                    </p>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="contact__form-input">
+                            <input 
+                                type="text" 
+                                name="name" 
+                                placeholder="Your Name *"
+                                class="contact__input"
+                                id="contact-name"
+                            />
+                        </div>
+
+                        <div class="contact__form-input">
+                            <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Your e-mail *"
+                                class="contact__input"
+                                id="contact-email"
+                            />
+                        </div>
+
+                        <div class="contact__form-input">
+                            <input 
+                                type="text" 
+                                name="subject" 
+                                placeholder="Write a Subject"
+                                class="contact__input"
+                                id="contact-subject"
+                            />
+                        </div>
+
+                        <div class="contact__form-input">
+                            <textarea 
+                                name="message" 
+                                id="contact-message"
+                                class="contact__input textarea"
+                                placeholder="Your Message"
+                            ></textarea>
+                        </div>
+
+                        <input type="submit" value="Submit" class="btn" />
+
+                        <p class="error__message" id="error-message"></p>
+                    </form>
+                </div>
+
+                <img src="assets/img/pic1.JPG" alt="" class="contact__img">
+            </div>
+        </section>
     </main>
 
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/tabs.js"></script>
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <a href="index.html" class="footer__logo">Carl</a>
+
+            <div class="footer__socials">
+                <a href="www.facebook.com" target="_blank" class="footer__social-link">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+                <a href="www.twitter.com" target="_blank" class="footer__social-link">
+                    <i class="uil uil-twitter"></i>
+                </a>
+
+                <a href="www.linkedin.com" target="_blank" class="footer__social-link">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+
+                <a href="www.instagram.com" target="_blank" class="footer__social-link">
+                    <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+
+            <p class="footer__copyright"> &copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script src="./assets/js/tabs.js"></script>
+    <script src="./assets/js/header.js"></script>
 </body>
 </html>
