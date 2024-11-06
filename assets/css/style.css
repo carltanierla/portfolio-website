@@ -107,7 +107,7 @@ input {
 }
 
 .section {
-    padding-block: 8rem;
+    padding-block: 6rem;
 }
 
 .section__title {
@@ -356,31 +356,28 @@ input {
 }
 
 .tabs__data-container {
-    /* display: grid; */
-    flex-direction: column;
     display: flex;
     gap: 1.75rem;
     align-items: center;
 }
 
-.tabs__title {
-    justify-self: center;
-}
-
-#certificates > div > .tabs__description {
+#certificates > div > .tabs__description,
+#experience > div > .tabs__description{
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .tabs__item {
     display: none;
-    height: 400px;
     gap: 1rem;
+    max-height: 20vh;
 }
 
 .tabs__item.tab__active {
     display: block;
     animation: show 1s forwards;
+    flex-direction: column;
 }
 
 @keyframes show {
@@ -597,7 +594,8 @@ input {
 }
 
 .tabs__logo {
-    /* grid-column: span 2; */
+    width: 120px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -607,14 +605,43 @@ input {
     transition: 0.3s;
 }
 
-  .logo__container {
+.logo__container {
+    /* flex-wrap: wrap; */
     display: flex;
-    /* row-gap: 10px;
-    column-gap: 10px;
-    grid-template-rows: repeat(2, 2fr);
-    grid-template-columns: repeat(2, 1fr)
-     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr); */
+    gap: 1rem;
+}
 
-  }
+.tabs__title {
+    width: 100px;
+}
+
+.about__content {
+    max-width: 500px;
+    max-height: 1210px;
+    align-self: flex-start;
+}
+
+/* From Uiverse.io by Tiagoadag */ 
+.card {
+    background-image: linear-gradient(163deg, var(--color-text) 0%, var(--color-primary) 100%);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.card2 {
+    width: 120px;
+    height: 100px;
+    background-color: #1a1a1a;
+    border-radius:;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px var(--color-border);
+}
   
