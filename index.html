@@ -23,7 +23,7 @@
                     <li><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
 
-                <div class="nav__close" id="nav__close">
+                <div class="nav__close" id="nav-close">
                     <i class="ul uil-times"></i>
                 </div>
             </div>
@@ -48,7 +48,7 @@
             <div class="nav__btns">
                 <a href="#contact" class="nav__link-btn btn">Contact Me</a>
 
-                <div class="nav__toggle" id="nav__toggle">
+                <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-bars"></i>
                 </div>
             </div>
@@ -63,18 +63,22 @@
                     <h1 class="home__title">
                         Hi, I'm Carl Joseph <span>Web developer.</span> based in the Philippines</h1>
                 </div>
-
-                <img src="assets/img/pic1.JPG" alt="Profile" class="home__img">
+                <div class="d-flex profile__container">
+                    <img src="assets/img/pic1.JPG" alt="Profile" class="home__img">
+                    <a href="/portfolio-website/assets/files/resume.pdf" class="download__btn" target="_blank" download>
+                        <button class="nav__link-btn btn download__btn">Download resume</button>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section class="about section" id="about">
             <div class="about__container container grid">
-                <img src="assets/img/pic1.JPG" alt="" class="about__img">
+                <img src="assets/img/pic2.jfif" alt="" class="about__img">
                 <div class="about__content">
                     <h2 class="section__title">About me</h2>
 
-                    <p class="about__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur tempora sapiente minus velit, quo delectus incidunt exercitationem qui possimus, quia pariatur. Corrupti quisquam perspiciatis ad quos necessitatibus pariatur exercitationem amet.</p>
+                    <p class="about__description">I'm a web developer who loves bringing ideas to life through code. With a strong focus on creating dynamic, user-friendly websites and applications. I create websites that are not only visually appealing but also highly functional.</p>
 
                     <div class="tabs__btns">
                         <span class="tabs__btn tab__active" data-target="skills">My Skills</span>
@@ -92,7 +96,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="html logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/html.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Html</b></h4>
+                                                    <p>Html</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -100,7 +104,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="css logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/css.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Css</b></h4>
+                                                    <p>Css</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,7 +112,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="JavaScript logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/javascript.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Javascript</b></h4>
+                                                    <p>Javascript</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -116,7 +120,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="jquery logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/jquery.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Jquery</b></h4>
+                                                    <p>Jquery</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,7 +128,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="bootstrap logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/bootstrap.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Bootstrap</b></h4>
+                                                    <p>Bootstrap</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -132,7 +136,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="vue logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/vue.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Vue</b></p>
+                                                    <p>Vue</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,17 +152,15 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="php logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/php.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Php</b></p>
+                                                    <p>Php</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tabs__logo cardo">
-                                            <div class="card">
-                                                <div class="tabs__logo card2">
-                                                    <img alt="laravel logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/laravel.svg">
-                                                    <div class="skill-logo-container">
-                                                        <p><b>Laravel</b></p>
-                                                    </div>
+                                        <div class="card">
+                                            <div class="tabs__logo card2">
+                                                <img alt="laravel logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/laravel.svg">
+                                                <div class="skill-logo-container">
+                                                    <p>Laravel</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,7 +176,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="mysql logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/mysql.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Mysql</b></p>
+                                                    <p>Mysql</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -190,7 +192,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="git logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/git.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Git</b></p>
+                                                    <p>Git</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -198,7 +200,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="php logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/docker.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Docker</b></p>
+                                                    <p>Docker</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -206,7 +208,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="php logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/jira.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Jira</b></p>
+                                                    <p>Jira</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -214,7 +216,7 @@
                                             <div class="tabs__logo card2">
                                                 <img alt="php logo." loading="lazy" width="24" height="24" decoding="async" data-nimg="1" style="color:transparent" src="./assets/img/Icons/confluence.svg">
                                                 <div class="skill-logo-container">
-                                                    <p><b>Confluence</b></p>
+                                                    <p>Confluence</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,30 +309,30 @@
 
             <div class="portfolio__container container grid">
                 <div class="portfolio__item">
-                    <img src="assets/img/pic1.JPG" alt="" class="portfolio__img">
+                    <img src="assets/img/portfolio-website.png" alt="" class="portfolio__img">
 
                     <div class="portfolio__data">
-                        <p class="portfolio__subtitle">Development</p>
-                        <h3 class="portfolio__title">Web Design</h3>
-                        <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="portfolio__title">Portfolio Website</h3>
+                        <p class="portfolio__subtitle">Html, Css, Javascript</p>
+                        <p class="portfolio__description">My Personal Portfolio website</p>
                     </div>
                 </div>
                 <div class="portfolio__item">
-                    <img src="assets/img/pic1.JPG" alt="" class="portfolio__img">
+                    <img src="assets/img/hris.png" alt="" class="portfolio__img">
 
                     <div class="portfolio__data">
-                        <p class="portfolio__subtitle">Application</p>
-                        <h3 class="portfolio__title">Photoshop Design</h3>
-                        <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="portfolio__title hris__title">HR Information System</h3>
+                        <p class="portfolio__subtitle hris__subtitle">Html, Css, Bootstrap, Vue JS, Json</p>
+                        <p class="portfolio__description hris__description">Managing employee attendance, import and export of attendance for payroll</p>
                     </div>
                 </div>
                 <div class="portfolio__item">
-                    <img src="assets/img/pic1.JPG" alt="" class="portfolio__img">
+                    <img src="assets/img/bg-black.jpg" alt="" class="portfolio__img">
 
                     <div class="portfolio__data">
-                        <p class="portfolio__subtitle">Development</p>
-                        <h3 class="portfolio__title">Web Design</h3>
-                        <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="portfolio__subtitle"></p>
+                        <h3 class="portfolio__title">TBD</h3>
+                        <p class="portfolio__description">To Be Developed</p>
                     </div>
                 </div>
             </div>
@@ -390,7 +392,7 @@
                     </form>
                 </div>
 
-                <img src="assets/img/pic1.JPG" alt="" class="contact__img">
+                <img src="assets/img/pic3.JPG" alt="" class="contact__img">
             </div>
         </section>
     </main>
@@ -429,5 +431,6 @@
     <script src="assets/js/form.js"></script>
     <script src="./assets/js/tabs.js"></script>
     <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/navmenu.js"></script>
 </body>
 </html>
