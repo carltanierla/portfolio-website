@@ -498,6 +498,12 @@ input {
     color: #000;
 }
 
+.lms__title,
+.lms__subtitle,
+.lms__description {
+    color: #ffffff;
+}
+
 .contact__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -637,14 +643,15 @@ input {
 .logo__container {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .tabs__title {
-    width: 100px;
+    width: 5rem;
 }
 
 .about__content {
-    max-width: 500px;
+    max-width: 700px;
     max-height: 1210px;
     margin-inline: auto;
 }
@@ -935,6 +942,14 @@ input {
     .tabs__item {
         height: 500px;
         max-height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+
+    .portfolio {
+        padding-top: 20rem;
     }
 }
 
